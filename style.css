@@ -100,20 +100,40 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Оновлений блок навігації - строго по центру */
 .nav {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    /* Головне: центруємо вміст по горизонталі */
+    justify-content: center;
+    align-items: center;
+    /* Відступ між посиланнями навігації та перемикачем мови */
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.nav-links {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    /* ЗБІЛЬШЕНО: Відступ між словами тепер 45px (було 25px) */
+    gap: 45px;
+
+    /* ЗБІЛЬШЕНО: Ширина контейнера, щоб вмістити ці відступи */
+    width: 850px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-main);
     font-weight: 500;
-    margin: 0 20px;
+    margin: 0;
     position: relative;
     transition: color 0.3s;
+    white-space: nowrap;
+    /* Забороняємо перенос тексту */
 }
 
 .nav-links a:hover {
@@ -352,4 +372,55 @@ h2 {
         position: static;
         margin-bottom: 30px;
     }
+
+.nav-links {
+    width: 100%;
+    /* На планшетах ширина автоматична */
+    flex-wrap: wrap;
+    /* Дозволяємо перенос */
+    gap: 15px;
+}
+}
+
+/* --- Стилізація Перемикача Мови --- */
+/* Перемикач мови */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    /* Прибираємо зайві відступи, бо працює gap у .nav */
+    font-size: 0.95em;
+}
+
+/* АКТИВНА МОВА - Жирний шрифт */
+.active-lang {
+    color: var(--text-main);
+    /* Було var(--primary) - тепер темний */
+    padding: 0 5px;
+    font-weight: 800;
+    /* Жирний */
+    /* text-shadow можна прибрати, якщо хочете зовсім просто */
+}
+
+/* Посилання на неактивну мову */
+.lang-link {
+    color: var(--text-secondary);
+    /* Сірий колір */
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 0 5px;
+    font-weight: 400;
+    /* Звичайний */
+}
+
+.lang-link:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+    /* Ефект збільшення при наведенні */
+}
+
+.separator {
+    color: var(--text-secondary);
+    margin: 0 4px;
+    opacity: 0.5;
 }

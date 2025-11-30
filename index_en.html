@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Frutiger Aero</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="bubble-container"></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About me</a>
+                <a href="#experience" class="nav-link">Work experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#achievements" class="nav-link">Pet Projects</a>
+                <a href="#achievements" class="nav-link">Skill Set</a>
+
+                <div class="lang-switcher">
+                    <a href="index.html" class="lang-link">UKR</a>
+                
+                    <span class="separator">|</span>
+                
+                    <span class="active-lang">EN</span>
+                </div>
+            </div>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </header>
+
+    <main class="main-grid">
+
+        <aside class="sidebar glass-card">
+            <div class="photo-wrapper">
+                <img src="img.jpg" alt="Фото профілю" class="profile-photo">
+            </div>
+
+            <div class="sidebar-content">
+                <h3 class="sidebar-title">Personal info</h3>
+                <ul class="info-list">
+                    <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br>Kyiv, Entuziastiv St.</li>
+                    <li><i class="fas fa-phone"></i> <strong>Phone:</strong><br>+380 96 614 46 45</li>
+                    <li><i class="fas fa-envelope"></i> <strong>Email:</strong><br><a
+                            href="mailto:denis.draga.aka.dragonio@gmail.com">dencikdraga0@gmail.com</a></li>
+                </ul>
+
+                <div class="contact-info-block">
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://t.me/@Denys_XO" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://wa.me/0966144645" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="viber://chat?number=380966144645" target="_blank" title="Viber">
+                        <i class="fab fa-viber"></i>
+                    </a>
+                    <a href="https://github.com/Den-Dragonio" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <h3 class="sidebar-title">Interests</h3>
+                <ul class="simple-list">
+                    <li><i class="fas fa-book-open"></i> Reading</li>
+                    <li><i class="fas fa-dumbbell"></i> Gym</li>
+                    <li><i class="fas fa-basketball-ball"></i> Basketball</li>
+                    <li><i class="fas fa-chess"></i> Chess</li>
+                </ul>
+
+                <h3 class="sidebar-title">Languages</h3>
+                <ul class="simple-list">
+                    <li>Ukrainian (Fluent)</li>
+                    <li>English (Upper Int.)</li>
+                    <li>Russian (Fluent)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content-area">
+
+            <section class="glass-bubble header-bubble">
+                <h1>Denys Draha</h1>
+                <p class="subtitle">23 years old, junior developer</p>
+            </section>
+
+            <section id="about" class="glass-bubble">
+                <h2>About me</h2>
+                <p>A beginner developer with experience in creating 2D and 3D projects. I have solid
+                knowledge of C# and Unity API. I understand OOP principles and design patterns. Interested in developing in the field of
+                GameDev, I learn new technologies quickly and am ready to solve technical challenges in the team.</p>
+            </section>
+
+            <section id="experience" class="glass-bubble">
+                <h2>Work Experience</h2>
+                <article class="item">
+
+                <h4>Unity Developer (Freelance / Pet Projects)</h4>
+                <p class="meta">2022 - now</p>
+                <ul class="experience-list">
+                    <li>Developing visual novel prototypes in Unity (C#).</li>
+                    <li>Customization of UI/UX interfaces and integration of dialog systems.</li>
+                    <li>Working with assets, animation and optimization for mobile platforms.</li>
+                </ul>
+
+                <h4>Private tutor (Mathematics / English)</h4>
+                <p class="meta">2018 - 2019</p>
+                <ul class="experience-list">
+                    <li>Explained complex concepts in simple language.</li>
+                    <li>Taught over 10 students, improving their grades by 30%.</li>
+                </ul>
+
+                </article>
+            </section>
+
+            <section id="education" class="glass-bubble">
+                <h2>Education</h2>
+                <article class="item">
+                    <h4>Master degree, Computer Science</h4>
+                    <p class="meta">NUBIP, 2024 - now</p>
+                </article>
+                <article class="item">
+                    <h4>Bachelor degree, Software Engineering</h4>
+                    <p class="meta">DTEU, 2020 - 2024</p>
+
+                </article>
+                <div class="item">
+                    <h4>Courses:</h4>
+                    <ul class="tags">
+                        <li>CS50</li>
+                        <li>Cisco CCNAv7</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects" class="section-block glass-bubble">
+                <h2>My projects and demos</h2>
+
+                <div class="projects-container">
+
+                    <article class="project-card">
+                        <h4>Web Portfolio & Game Hosting</h4>
+                        <p class="project-desc">A platform for showcasing my Unity projects (WebGL builds). Developed by myself.</p>
+                        <div class="project-links">
+                            <a href="https://den-dragonio.github.io/my-apps/" target="_blank"
+                                class="project-link demo-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/Den-Dragonio/my-apps" target="_blank"
+                                class="project-link code-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="achievements" class="glass-bubble">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <span>Unity</span>
+                    <span>C# / .NET</span>
+                    <span>Git / GitHub</span>
+                    <span>Python</span>
+                    <span>HTML / CSS</span>
+                    <span>JavaScript</span>
+                    <span>SQL / SSMS / SQLite</span>
+                    <span>Figma</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
