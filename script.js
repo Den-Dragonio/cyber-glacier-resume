@@ -94,6 +94,41 @@ function gameLoop() {
     // Перевіряємо частіше для плавності
     requestAnimationFrame(gameLoop);
 }
+// Получаем элементы модального окна
+const modal = document.getElementById("diplomaModal");
+const modalImg = document.getElementById("modalImage");
+const closeBtn = document.querySelector(".close-btn");
+
+// Функция открытия (вызывается при клике на иконку)
+function openDiploma(imageSrc) {
+    modal.style.display = "block";
+    modalImg.src = imageSrc; // Устанавливаем картинку
+    document.body.style.overflow = "hidden"; // Запрещаем скролл сайта
+}
+
+// Закрытие при клике на крестик
+closeBtn.onclick = function() {
+    closeModal();
+}
+
+// Закрытие при клике ВНЕ картинки (на темный фон)
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Закрытие клавишей ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
+
+function closeModal() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Возвращаем скролл
+}
 
 // Запуск
 createBubble(); // Перша бульбашка

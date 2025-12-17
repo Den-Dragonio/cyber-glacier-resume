@@ -21,7 +21,7 @@
                 <a href="#about" class="nav-link">About me</a>
                 <a href="#experience" class="nav-link">Work experience</a>
                 <a href="#education" class="nav-link">Education</a>
-                <a href="#achievements" class="nav-link">Pet Projects</a>
+                <a href="#achievements" class="nav-link">My Projects</a>
                 <a href="#achievements" class="nav-link">Skill Set</a>
 
                 <div class="lang-switcher">
@@ -93,14 +93,15 @@
 
             <section class="glass-bubble header-bubble">
                 <h1>Denys Draha</h1>
-                <p class="subtitle">23 years old, junior developer</p>
+                <p class="subtitle">23 years old, Junior Software Developer</p>
             </section>
 
             <section id="about" class="glass-bubble">
                 <h2>About me</h2>
-                <p>A beginner developer with experience in creating 2D and 3D projects. I have solid
-                knowledge of C# and Unity API. I understand OOP principles and design patterns. Interested in developing in the field of
-                GameDev, I learn new technologies quickly and am ready to solve technical challenges in the team.</p>
+                <p>A versatile <strong>Junior Engineer</strong> who is not limited to a single tech stack. My core expertise is <strong>C#</strong>
+                     and <strong>.NET</strong>, but I also have
+                hands-on experience building web interfaces (<strong>HTML/CSS/JS</strong>) and scripting in <strong>Python</strong>. My background in GameDev taught me to
+                write efficient code and rapidly master new APIs. Ready to tackle both <strong>Backend</strong> logic and <strong>Full Stack</strong> challenges.</p>
             </section>
 
             <section id="experience" class="glass-bubble">
@@ -108,11 +109,11 @@
                 <article class="item">
 
                 <h4>Unity Developer (Freelance / Pet Projects)</h4>
-                <p class="meta">2022 - now</p>
+                <p class="meta">2022 - 2025</p>
                 <ul class="experience-list">
-                    <li>Developing visual novel prototypes in Unity (C#).</li>
-                    <li>Customization of UI/UX interfaces and integration of dialog systems.</li>
-                    <li>Working with assets, animation and optimization for mobile platforms.</li>
+                    <li>Designed object-oriented application architecture in C# and .NET.</li>
+                    <li>Developed of data management systems (JSON serialization) and complex UI logic.</li>
+                    <li>Optimized code and memory performance for mobile platforms.</li>
                 </ul>
 
                 <h4>Private tutor (Mathematics / English)</h4>
@@ -129,10 +130,13 @@
                 <h2>Education</h2>
                 <article class="item">
                     <h4>Master degree, Computer Science</h4>
-                    <p class="meta">NUBIP, 2024 - now</p>
+                    <p class="meta">NUBIP, 2024 - 2025</p>
                 </article>
                 <article class="item">
-                    <h4>Bachelor degree, Software Engineering</h4>
+                    <h4>
+                        Bachelor degree, Software Engineering
+                        <i class="fas fa-file-alt view-diploma" onclick="openDiploma('bahelor.png')" title="View Diploma"></i>
+                    </h4>
                     <p class="meta">DTEU, 2020 - 2024</p>
 
                 </article>
@@ -152,7 +156,8 @@
 
                     <article class="project-card">
                         <h4>Web Portfolio & Game Hosting</h4>
-                        <p class="project-desc">A platform for showcasing my Unity projects (WebGL builds). Developed by myself.</p>
+                        <p class="project-desc">A platform for showcasing my Unity projects (WebGL builds). Developed by myself using HTML, CSS and JavaScript.
+                        Responsive design for Desktop and Mobile.</p>
                         <div class="project-links">
                             <a href="https://den-dragonio.github.io/my-apps/" target="_blank"
                                 class="project-link demo-link"><i class="fas fa-external-link-alt"></i> Demo</a>
@@ -167,20 +172,23 @@
             <section id="achievements" class="glass-bubble">
                 <h2>Technical Skills</h2>
                 <div class="skills-grid">
-                    <span>Unity</span>
                     <span>C# / .NET</span>
+                    <span>SQL / SSMS / SQLite</span>
                     <span>Git / GitHub</span>
                     <span>Python</span>
                     <span>HTML / CSS</span>
                     <span>JavaScript</span>
-                    <span>SQL / SSMS / SQLite</span>
+                    <span>Unity</span>
                     <span>Figma</span>
                 </div>
             </section>
 
         </div>
     </main>
-
+        <div id="diplomaModal" class="modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
     <script src="script.js"></script>
 </body>
 
